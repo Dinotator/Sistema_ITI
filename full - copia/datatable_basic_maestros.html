@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="../../../../global_assets/js/main/jquery.min.js"></script>
+	<script src="../../../../global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/datatables_basic.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-dark">
+		<div class="navbar-brand">
+			<a href="index.html" class="d-inline-block">
+				<img src="../../../../global_assets/images/logo_light.png" alt="">
+			</a>
+		</div>
+
+		
+	
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+		<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">
+								<i class="icon-home4"></i>
+								<span>
+									Dashboard
+									<span class="d-block font-weight-normal opacity-50">No active orders</span>
+								</span>
+							</a>
+						</li>
+						
+
+						<!-- Forms -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Formularios"></i></li>
+						
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Formularios</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								
+									<li class="nav-item"><a href="form_layout_horizontal_agregar_alumnos.html" class="nav-link active">Agregar Alumnos</a></li>
+									<li class="nav-item"><a href="form_layout_horizontal_editar_alumnos.html" class="nav-link">Editar Alumnos</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Listado de alumnos</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item nav-item-submenu">
+								<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Formulario Maestros</span></a>
+								<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								
+									<li class="nav-item"><a href="datatable_basic_maestros.html" class="nav-link active">Listado de Maestros</a></li>
+								</ul>
+							</li>
+
+							<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Enlistado de Grupos y Materias</div> <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Grupos y Materias</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="datatable_basic_materias.html" class="nav-link">Enlistado de materias</a></li>
+								<li class="nav-item"><a href="datatable_basic_grupos.html" class="nav-link active">Enlistado de grupos</a></li>
+							
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Transporte</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="form_layout_horizontal_transporte.html" class="nav-link active">Formulario de transporte</a></li>
+							
+							</ul>
+						</li>
+						<!-- /forms -->
+
+						
+						
+						
+						
+						
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header page-header-light">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title d-flex">
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Listado de Maestros</span></h4>
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+				</div>
+
+				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+					<div class="d-flex">
+						<div class="breadcrumb">
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<a href="datatable_basic.html" class="breadcrumb-item">Datatables</a>
+							<span class="breadcrumb-item active">Basic</span>
+						</div>
+
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+					</div>
+
+					<div class="header-elements d-none">
+						<div class="breadcrumb justify-content-center">
+							<a href="#" class="breadcrumb-elements-item">
+								<i class="icon-comment-discussion mr-2"></i>
+								Support
+							</a>
+
+							<div class="breadcrumb-elements-item dropdown p-0">
+								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-gear mr-2"></i>
+									Settings
+								</a>
+
+								<div class="dropdown-menu dropdown-menu-right">
+									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page header -->
+
+			<!-- Content area -->
+			<div class="content">
+					<div style="text-align: right">
+				<a href="#ventana1" style="text-align: right" class="btn btn-primary btn-lg" data-toggle="modal" >Registrar Maestros</a>
+					</div>
+				<!--Modal Ingresar-->
+				
+				<div class="modal fade" id="ventana1" tabindex="-1" role="dialog">
+					<div class="modal-dialog" role="document">
+						<!--Para salir de la ventana emergente presione ESC-->
+						<div class="modal-content">
+							
+								<div class="card">
+										<div class="card-header header-elements-inline">
+											<h5 class="card-title">Registro de datos</h5>
+										</div>
+					
+										<div class="card-body">
+											<form action="#">
+												<div class="row">
+													<div class="col-md-10">
+														<fieldset>
+															<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Detalles Personales</legend>
+					
+															<div class="form-group row">
+																<label class="col-lg-3 col-form-label">Clave</label>
+																<div class="col-lg-9">
+																	<input type="number" class="form-control">
+																</div>
+															</div>
+					
+															<div class="form-group row">
+																<label class="col-lg-3 col-form-label">Ingrese su nombre/s:</label>
+																<div class="col-lg-9">
+																	<input type="text" class="form-control">
+																</div>
+															</div>
+					
+															<div class="form-group row">
+																<label class="col-lg-3 col-form-label">Ingrese su apellido:</label>
+																<div class="col-lg-9">
+																	<input type="text" class="form-control">
+																</div>
+															</div>
+															
+															<div class="form-group row">
+																	<label class="col-lg-3 col-form-label">Género</label>
+																	<div class="col-lg-9">
+																		<input type="text" class="form-control">
+																	</div>
+														</div>
+
+														<div class="form-group row">
+																<label class="col-lg-3 col-form-label">Edad:</label>
+																<div class="col-lg-9">
+																	<input type="number" class="form-control">
+																</div>
+													</div>
+					
+														<div class="form-group row">
+																<label class="col-lg-3 col-form-label">Nivel de estudios:</label>
+																<div class="col-lg-9">
+																	<input type="text" class="form-control">
+																</div>
+															</div>
+						
+															<div class="form-group row">
+																<label class="col-lg-3 col-form-label">Correo Electrónico:</label>
+																<div class="col-lg-9">
+																	<input type="text" class="form-control">
+																</div>
+															</div>
+					
+															<div class="form-group row">
+																<label class="col-lg-3 col-form-label">Teléfono:</label>
+																<div class="col-lg-9">
+																	<input type="number" class="form-control">
+																</div>
+															</div>
+					
+															<div class="form-group row">
+																	<label class="col-lg-3 col-form-label">Dirección:</label>
+																	<div class="col-lg-9">
+																		<input type="text" class="form-control">
+																	</div>
+																</div>
+																		   
+																<div class="form-group row">
+																		<label class="col-lg-3 col-form-label">Salario por mes:</label>
+																		<div class="col-lg-9">
+																			<input type="text" class="form-control">
+																		</div>
+																	</div>
+														</fieldset>
+													</div>
+												</div>
+					
+												<div class="text-right">
+													<button type="submit" class="btn btn-primary">Enviar<i class="icon-paperplane ml-2"></i></button>
+												</div>
+											</form>
+										</div>
+									</div>
+						</div>
+					</div>
+				</div>
+				<!--/Modal Ingresar-->
+
+
+
+				<!-- Content area Editar-->
+				<div class="content">
+						<div style="text-align: right">
+					<a href="#ventana2" style="text-align: right" class="btn btn-primary btn-lg" data-toggle="modal" >Edición Maestros</a>
+						</div>
+					<!--Modal Editar-->
+	
+					<div class="modal fade" id="ventana2" tabindex="-1" role="dialog">
+						<div class="modal-dialog" role="document">
+						<!--Para salir de la ventana emergente presione ESC-->
+							<div class="modal-content">
+				
+									<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Edite los datos</h5>
+							</div>
+		
+							<div class="card-body">
+								<form action="#">
+									<div class="row">
+										<div class="col-md-10">
+											<fieldset>
+												<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Detalles Personales</legend>
+		
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Clave</label>
+													<div class="col-lg-9">
+														<input type="number" class="form-control" placeholder="ITI-27099">
+													</div>
+												</div>
+		
+												<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Edite el nombre:</label>
+														<div class="col-lg-9">
+															<input type="text" class="form-control" placeholder="Mario Humberto">
+														</div>
+													</div>
+		
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Edite su apellido:</label>
+													<div class="col-lg-9">
+														<input type="text" class="form-control" placeholder="Rodriguez Chávez">
+													</div>
+												</div>
+												
+												<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Género</label>
+														<div class="col-lg-9">
+															<input type="text" class="form-control" placeholder="Masculino">
+														</div>
+											</div>
+											<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Edad:</label>
+													<div class="col-lg-9">
+														<input type="number" class="form-control" placeholder="42 años">
+													</div>
+												</div>
+		
+											<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Nivel de estudios:</label>
+													<div class="col-lg-9">
+														<input type="text" class="form-control" placeholder="Doctorado">
+													</div>
+												</div>
+											</div>
+		
+											
+											
+										
+		
+										<div class="col-md-10">
+											
+												
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Correo Electrónico:</label>
+													<div class="col-lg-9">
+														<input type="text" class="form-control" placeholder="mrodriguezc@upv.edu.mx">
+													</div>
+												</div>
+
+												
+		
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Teléfono:</label>
+													<div class="col-lg-9">
+														<input type="number" class="form-control" placeholder="+52 834-416-24-85">
+													</div>
+												</div>
+		
+												<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Dirección:</label>
+														<div class="col-lg-9">
+															<input type="text" class="form-control" placeholder="Fracc. Las flores">
+														</div>
+													</div>
+															   
+													<div class="form-group row">
+															<label class="col-lg-3 col-form-label">Salario por mes:</label>
+															<div class="col-lg-9">
+																<input type="text" class="form-control" placeholder="$10´000">
+															</div>
+														</div>
+											</fieldset>
+										</div>
+									</div>
+								</div>
+		
+									<div class="text-center">
+										<button type="submit" class="btn btn-primary">Enviar<i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+			</div>
+		</div>
+	</div>
+	<!--/Modal Editar-->
+
+
+
+
+
+
+
+				<!-- Basic datatable -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Lista</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					
+
+					<table class="table datatable-basic">
+						<thead>
+							<tr>
+								<th>Clave</th>
+								<th>Nombre/s</th>
+								<th>Apellidos</th>
+								<th>Género</th>
+								<th>Edad</th>
+								<th>Nivel de estudios</th>
+								<th>Correo Electrónico</th>
+								<th>Teléfono</th>
+								<th>Dirección</th>
+								<th>Salario</th>
+								<td> <button name="button" class="btn btn-danger">Elminar</button></td>
+								
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td>ITI-27099</td>
+								<td>Mario Humberto</td>
+								<td>Rodriguez Chávez</td>
+								<td>Hombre</td>
+								<td>42 años</td>
+								<td>Doctorado</td>
+								<td>mrodriguezc@upv.edu.mx</td>
+								<td>+52 834-416-24-85</td>
+								<td>Las flores</td>
+								<td>$15'000</td>
+								<td> <button name="button" class="btn btn-danger">Elminar</button></td>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+									<td>ITM-27299</td>
+									<td>Jack The</td>
+									<td>Hand Some</td>
+									<td>Hombre</td>
+									<td>37 años</td>
+									<td>Maestría</td>
+									<td>jackhs@hotmail.com</td>
+									<td>+52 834-153-61-32</td>
+									<td>Hyperion</td>
+									<td>$8'214</td>
+									<td> <button name="button" class="btn btn-danger">Elminar</button></td>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+									<td>ISA-27027</td>
+									<td>Rubén</td>
+									<td>Doblas Gundersen</td>
+									<td>Hombre</td>
+									<td>26 años</td>
+									<td>Licenciatura</td>
+									<td>elrubiusomg@hotmail.com</td>
+									<td>+52 834-417-53-26</td>
+									<td>España</td>
+									<td>$32'200</td>
+									<td> <button name="button" class="btn btn-danger">Elminar</button></td>	
+										</div>
+									</div>
+								</td>
+							</tr>
+
+		    				<tr>
+									<td>Pymes-27100</td>
+									<td>Luis Fernando</td>
+									<td>Flores Alvarado</td>
+									<td>Hombre</td>
+									<td>32 años</td>
+									<td>Licenciatura</td>
+									<td>fernanfloo@hotmail.com</td>
+									<td>+52 834-417-53-12</td>
+									<td>Salvador</td>
+									<td>$28'100</td>
+									<td> <button name="button" class="btn btn-danger">Elminar</button></td>		
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+									<td>IM-27069</td>
+									<td>Guillermo</td>
+									<td>Díaz Íbañez</td>
+									<td>Hombre</td>
+									<td>28 años</td>
+									<td>Maestría</td>
+									<td>willirex@hotmai.com</td>
+									<td>+52 834-569-32-41</td>
+									<td>Valencia</td>
+									<td>$42'900</td>
+									<td> <button name="button" class="btn btn-danger">Elminar</button></td>			
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+									<td>Pymes-27613</td>
+									<td>Abril Abdamari</td>
+									<td>Garza Alonso</td>
+									<td>Mujer</td>
+									<td>25 años</td>
+									<td>Licenciatura</td>
+									<td>AriGameplays@hotmail.com</td>
+									<td>+52 834-257-12-07</td>
+									<td>Fracc. Las flores</td>
+									<td>$17'500</td>
+									<td> <button name="button" class="btn btn-danger">Elminar</button></td>	
+										</div>
+									</div>
+								</td>
+							</tr>
+	
+							<tr>
+									<td>IM-27777</td>
+									<td>Samuel</td>
+									<td>De Luque Batuecas</td>
+									<td>Hombre</td>
+									<td>29 años</td>
+									<td>Doctorado</td>
+									<td>veggeta777@hotmail.com</td>
+									<td>+52 834-777-77-77</td>
+									<td>Planeta Veggeta</td>
+									<td>$77'777</td>
+									<td> <button name="button" class="btn btn-danger">Elminar</button></td>		
+										</div>
+									</div>
+								</td>
+							</tr>
+	
+							<tr>
+									<td>ITI-27666</td>
+									<td>Angel David</td>
+									<td>Revilla</td>
+									<td>Hombre</td>
+									<td>42 años</td>
+									<td>Doctorado</td>
+									<td>drossrotzank@hotmail.com</td>
+									<td>+52 834-666-66-66</td>
+									<td>Luna de Plutón</td>
+									<td>$66'666</td>
+									<td> <button name="button" class="btn btn-danger">Elminar</button></td>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+									<td>Pymes-27385</td>
+									<td>Germán Alejandro</td>
+									<td>Garmendia Aranis</td>
+									<td>Hombre</td>
+									<td>25 años</td>
+									<td>Doctorado</td>
+									<td>holasoygerman@hotmail.com</td>
+									<td>+52 834-613-91-07</td>
+									<td>Chile</td>
+									<td>$25'500</td>
+									<td> <button name="button" class="btn btn-danger">Elminar</button></td>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+									<td>ITM-27015</td>
+									<td>Imane</td>
+									<td>Anys</td>
+									<td>Mujer</td>
+									<td>23 años</td>
+									<td>Maestría</td>
+									<td>pokimane@hotmail.com</td>
+									<td>+52 834-815-62-73</td>
+									<td>San Francisco</td>
+									<td>$14'289</td>
+									<td> <button name="button" class="btn btn-danger">Elminar</button></td>		
+										</div>
+									</div>
+								</td>
+							</tr>
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>
