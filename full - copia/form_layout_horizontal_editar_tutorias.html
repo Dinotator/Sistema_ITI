@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +24,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
 	<script src="global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="global_assets/js/demo_pages/form_layouts.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -401,40 +402,32 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
-						<li class="nav-item">
-							<a href="index.html" class="nav-link">
-								<i class="icon-home4"></i>
-								<span>
-									Dashboard
-									<span class="d-block font-weight-normal opacity-50">No active orders</span>
-								</span>
-							</a>
-						</li>
+					
 						<!-- /main -->
 
 						<!-- Forms -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Formularios</div> <i class="icon-menu" title="Forms"></i></li>
-						<li class="nav-item nav-item-submenu">
-							
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Alumnos</span></a>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
+						
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Formularios</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_horizontal_agregar_alumnos.html" class="nav-link">Agregar alumnos</a></li>
-								<li class="nav-item"><a href="form_layout_horizontal_editar_alumnos.html" class="nav-link">Editar alumnos</a></li>
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Enlistado de alumnos</a></li>
+								
+								<li class="nav-item"><a href="form_layout_horizontal_agregar_alumnos.html" class="nav-link active">Agregar Alumnos</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal_editar_alumnos.html" class="nav-link active">Editar Alumnos</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Listado de alumnos</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Enlistado de Maestros</div> <i class="icon-menu" title="Forms"></i></li>
+
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Maestros</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="datatable_basic_maestros.html" class="nav-link">Enlistado de maestros</a></li>
-							</ul>
-						</li>
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Enlistado de Grupos y Materias</div> <i class="icon-menu" title="Forms"></i></li>
+								<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Formulario Maestros</span></a>
+								<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								
+									<li class="nav-item"><a href="datatable_basic_maestros.html" class="nav-link active">Listado de Maestros</a></li>
+								</ul>
+							</li>
+
+							<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Enlistado de Grupos y Materias</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Grupos y Materias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
@@ -462,41 +455,20 @@
 							</ul>
 						</li>
 						<!-- /forms -->
-
-						<!-- Components -->
 						
-						<!-- /components -->
-
-						<!-- Layout -->
-						
-						<!-- /layout -->
-
+					
 						<!-- Data visualization -->
 						
-						<!-- /data visualization -->
-
-						<!-- Extensions -->
-						
-						<!-- /extensions -->
-
-						<!-- Tables -->
-					
-						
-						<!-- /tables -->
-
-						<!-- Page kits -->
-						
-						<!-- /page kits -->
 
 					</ul>
 				</div>
-				<!-- /main navigation -->
+			
 
 			</div>
-			<!-- /sidebar content -->
+			
 			
 		</div>
-		<!-- /main sidebar -->
+		
 
 
 		<!-- Main content -->
@@ -506,7 +478,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Datatables</span> - Registro de Grupos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tutorías</span> - Editar</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -523,8 +495,7 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="datatable_basic.html" class="breadcrumb-item">Datatables</a>
-							<span class="breadcrumb-item active">Registro de Grupos</span>
+							<a href="form_layout_horizontal.html" class="breadcrumb-item">Edite Tutorías</a>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -555,368 +526,118 @@
 					</div>
 				</div>
 			</div>
-			<!-- /page header -->
-
-
-			<!-- Content area -->
-			<div class="content">
-
 	
-				<!-- Basic datatable -->
-				<div class="card">
-						<div class="card-header header-elements-inline">
-							<h5 class="card-title">Enlistado de Grupos</h5>
-							
-							<div class="header-elements">
-								<div class="list-icons">
-									<a class="list-icons-item" data-action="collapse"></a>
-									<a class="list-icons-item" data-action="reload"></a>
-									<a class="list-icons-item" data-action="remove"></a>
+                                    
+                                    
+                                <!-- /forms -->
+
+                <!-- 2 columns form -->
+                <div class="card">
+                    <div class="card-header header-elements-inline">
+                        <h5 class="card-title">Ingrese los datos</h5>
+                        <div class="header-elements">
+                            <div class="list-icons">
+                                <a class="list-icons-item" data-action="collapse"></a>
+                                <a class="list-icons-item" data-action="reload"></a>
+                                <a class="list-icons-item" data-action="remove"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Información del alumno</legend>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label">Nombre:</label>
+                                            <div class="col-lg-9">
+                                                <input type="text" class="form-control" placeholder="Dino Tonatiuh Gutiérrez Martínez">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label">Matrícula:</label>
+                                            <div class="col-lg-9">
+                                                <input type="number" class="form-control" placeholder="1930351">
+                                            </div>
+                                        </div>
+
+                                
+
+										<div class="form-group row">
+                                            <label class="col-lg-3 col-form-label">Carrera:</label>
+                                            <div class="col-lg-9">
+                                                <select class="form-control form-control-select2 select2-hidden-accessible" data-fouc="" tabindex="-1" aria-hidden="true">
+                                                    <optgroup label="Carreras">
+                                                        <option value="1">Pymes - Licenciatura en Administración Y Gestión Empresarial</option>
+                                                        <option value="2">ITI - Ingeniería en Tecnologías de la Información</option>
+                                                        <option value="3">IM - Ingeniería en Mecatrónica</option>
+                                                        <option value="4">ITM - Ingeniería en Tecnologías de Manufactura</option>
+                                                        <option value="5">ISA - Ingeniería en Sistemas Automotrices</option>
+                                                    </optgroup>
+                                                </select>
+                                        </div>
+                                    </div>
+                                       
+                                    </fieldset>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <legend class="font-weight-semibold"><i class="icon-reading mr-1"></i> Información del Maestro</legend>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label">Nombre:</label>
+                                            <div class="col-lg-9">
+                                                <input type="text" class="form-control" placeholder="Mario Humberto Rodríguez Chávez">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 col-form-label">Número de empleado:</label>
+                                            <div class="col-lg-9">
+                                                <input type="number" class="form-control" placeholder="010">
+                                            </div>
+										</div>
+										<div class="form-group row">
+                                            <label class="col-lg-3 col-form-label">Carrera:</label>
+                                            <div class="col-lg-9">
+                                                <select class="form-control form-control-select2 select2-hidden-accessible" data-fouc="" tabindex="-1" aria-hidden="true">
+                                                    <optgroup label="Carreras">
+                                                        <option value="1">Pymes - Licenciatura en Administración Y Gestión Empresarial</option>
+                                                        <option value="2">ITI - Ingeniería en Tecnologías de la Información</option>
+                                                        <option value="3">IM - Ingeniería en Mecatrónica</option>
+                                                        <option value="4">ITM - Ingeniería en Tecnologías de Manufactura</option>
+                                                        <option value="5">ISA - Ingeniería en Sistemas Automotrices</option>
+                                                    </optgroup>
+                                                </select>
+                                        </div>
+                                    </div>
+										
+										
+										
+                                    </fieldset>
+                                </div>
+							</div>
+							<div class="form-group row">
+									<label class="col-lg-3 col-form-label">Fecha de sesión:</label>
+								<input type="date" name="fecha" min="2019-10-23" max ="2100-10-15"step="2">
+							</div>
+							<div class="form-group row" div style="text-align: center">
+								<label class="col-lg-3 col-form-label">Tema a tratar:</label>
+								<div class="col-lg-9">
+									<textarea rows="5" cols="5" class="form-control" placeholder="Física Cuántica, Teoría de las líneas temporales y univeros paralelos"></textarea>
 								</div>
 							</div>
-						</div>
-				
-					
-				
-					<div id="DataTables_Table_0_filter" class="dataTables_filter">
-						<div class="content">
-
-							<a href="#ventana1" class="btn btn-primary btn-lg" data-toggle="modal">Agregar Grupo</a>		
-								<!--Modal Editar-->
-
-								<a href="#ventana2" class="btn btn-primary btn-lg" data-toggle="modal">Editar Grupo</a>		
-								<div class="modal fade" id="ventana2" role="dialog">
-									<div class="modal-dialog modal-8" role="document">
-										<div class="modal-content">						
-											<div class="card">
-												<div class="card-header header-elements-inline">
-													<h5 class="card-title">Modifique los datos</h5>														
-													<div class="header-elements">
-												</div>
-											</div>				
-										<div class="card-body">
-									<form action="#">
-										<div class="row">
-											<div class="col-md-10">
-											<fieldset>
-												<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Datos del grupo</legend>							
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Carrera:</label>
-													<div class="col-lg-9">
-														<input type="text" placeholder="ITI" class="form-control">
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Grupo:</label>
-													<div class="col-lg-9">
-														<input type="text" placeholder="ITI 1-1" class="form-control">
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Hora de entrada:</label>
-													<div class="col-lg-9">
-														<input type="time" placeholder="7:00 a.m" class="form-control">
-													</div>
-												</div>	
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Materias asignadas:</label>
-													<div class="col-lg-9">
-														<input type="text" placeholder="3700B, 2709B, 55120..." class="form-control">
-													</div>
-												</div>	
-											</div>		
-											</fieldset>
-										</div>	
-									</div>
-									<div class="text-center">
-										<button type="submit" class="btn btn-primary">Enviar<i class="icon-paperplane ml-2"></i></button>
-									</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-						<!--/Modal Editar-->		
-									
-							<div class="modal fade" id="ventana1" tabindex="-1" role="dialog">
-								<div class="modal-dialog modal-8" role="document">
-									<div class="modal-content">						
-										<div class="card">
-											<div class="card-header header-elements-inline">
-												<h5 class="card-title">Ingrese los datos</h5>														
-												<div class="header-elements">
-											</div>
-										</div>				
-									<div class="card-body">
-								<form action="#">
-									<div class="row">
-										<div class="col-md-10">
-										<fieldset>
-											<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Datos del grupo</legend>							
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Carrera:</label>
-												<div class="col-lg-9">
-													<input type="text" class="form-control">
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Grupo:</label>
-												<div class="col-lg-9">
-													<input type="text" class="form-control">
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Hora de entrada:</label>
-												<div class="col-lg-9">
-													<input type="time" class="form-control">
-												</div>
-											</div>	
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Materias asignadas:</label>
-												<div class="col-lg-9">
-													<input type="text" class="form-control">
-												</div>
-											</div>	
-									</div>
-								</div>
-								<div class="text-center">
-									<button type="submit" class="btn btn-primary">Enviar<i class="icon-paperplane ml-2"></i></button>
-								</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		<!--/Modal-->
-
-		<!--LLENADO DE LA DATATABLE-->
-	</div>
-	<table class="table datatable-basic dataTable no-footer" cellspacing="0" width="100%" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-						<thead>
-							<tr>
-								<th>Carrera</th>
-								<th>Grupo</th>
-								<th>Hora de entrada</th>
-								<th>Materias Asignadas</th>
-								<th>Estado del grupo</th>
-								<th class="text-center">Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>ITI</td>
-								<td>ITI 1-1</td>
-								<td>7:00 a.m</td>
-								<td>2814A, 2700A, 2710C, 5621B</td>
-								<td><span class="badge badge-success">En curso</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>IM</td>
-								<td>IM 4-2</td>
-								<td>8:50 a.m</td>
-								<td>2814A, 2700A, 5623B</td>
-								<td><span class="badge badge-success">En curso</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>ITI</td>
-								<td>ITI 1-3</td>
-								<td>2:00 p.m</td>
-								<td>2814A, 2700A, 2710B, 5621A</td>
-								<td><span class="badge badge-success">En curso</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>ISA</td>
-								<td>ISA 7-2</td>
-								<td>8:00 a.m</td>
-								<td>3212A, 5670B, 27000C, 7021A</td>
-								<td><span class="badge badge-success">En curso</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>ITI</td>
-								<td>ITI 7-2</td>
-								<td>7:00 a.m</td>
-								<td>5500B, 7012A, 6001A, 5100B</td>
-								<td><span class="badge badge-success">En curso</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>LAyGE</td>
-								<td>LAyGE 1-1</td>
-								<td>7:00 a.m</td>
-								<td>2814A, 3305B</td>
-								<td><span class="badge badge-success">En curso</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>ITM</td>
-								<td>ITM 0-1 Bis</td>
-								<td>7:00 a.m</td>
-								<td>1001A, 2090B</td>
-								<td><span class="badge badge-success">En curso</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>IM</td>
-								<td>IM 7-1</td>
-								<td>1:00 p.m</td>
-								<td>2700A, 5121B , 5222C, 6090C, 7001A</td>
-								<td><span class="badge badge-success">En curso</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Eliminar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Editar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			
-				<!-- /basic datatable -->
-
-
-				<!-- Pagination types -->
-				
-				<!-- /pagination types -->
-
-
-				<!-- State saving -->
-				
-				<!-- /state saving -->
-
-
-				<!-- Scrollable datatable -->
-			
-				<!-- /scrollable datatable -->
-
-			</div>
-			<!-- /content area -->
-
-
-			<!-- Footer -->
-			<div class="navbar navbar-expand-lg navbar-light">
-				<div class="text-center d-lg-none w-100">
-					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
-						<i class="icon-unfold mr-2"></i>
-						Footer
-					</button>
-				</div>
-
-				<div class="navbar-collapse collapse" id="navbar-footer">
-					<span class="navbar-text">
-						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
-					</span>
-
-					<ul class="navbar-nav ml-lg-auto">
-						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
-						<li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
-						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- /footer -->
-
-		</div>
-		<!-- /main content -->
-
-	</div>
-	<!-- /page content -->
-
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-primary">Enviar <i class="icon-paperplane ml-2"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
